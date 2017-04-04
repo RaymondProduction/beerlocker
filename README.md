@@ -38,5 +38,5 @@ db.people.find())
 * help - information about the commands
 
 ## Step 3
-I have implemented GET, PUT, POST, and DELETE endpoints.
+I have implemented GET, PUT, POST, and DELETE endpoints (full CRUD).
 

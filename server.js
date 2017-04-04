@@ -26,6 +26,51 @@ router.get('/', function(req, res) {
   res.json({ message: 'Start server' });
 });
 
+// Create a new route with the /beers/:beer_id prefix
+var beerRouteID = router.route('/beers/:beer_id');
+
+// Create endpoint /api/beers/:beer_id for GET
+beerRouteID.get(function(req, res) {
+  // Use the Beer model to find a specific beer
+  Beer.findById(req.params.beer_id, function(err, beer) {
+    if (err)
+      res.send(err);
+
+    res.json(beer);
+  });
+});
+
+// Create endpoint /api/beers/:beer_id for PUT
+beerRouteID.put(function(req, res) {
+  // Use the Beer model to find a specific beer
+  Beer.findById(req.params.beer_id, function(err, beer) {
+    if (err)
+      res.send(err);
+
+    // Update the existing beer quantity
+    beer.quantity = req.body.quantity;
+
+    // Save the beer and check for errors
+    beer.save(function(err) {
+      if (err)
+        res.send(err);
+
+      res.json(beer);
+    });
+  });
+});
+
+// Create endpoint /api/beers/:beer_id for DELETE
+beerRouteID.delete(function(req, res) {
+  // Use the Beer model to find a specific beer and remove it
+  Beer.findByIdAndRemove(req.params.beer_id, function(err) {
+    if (err)
+      res.send(err);
+
+    res.json({ message: 'Beer removed from the locker!' });
+  });
+});
+
 // Create a new route with the prefix /beers
 var beersRoute = router.route('/beers');
 
