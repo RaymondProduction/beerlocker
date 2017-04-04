@@ -40,3 +40,26 @@ db.people.find())
 ## Step 3
 I have implemented GET, PUT, POST, and DELETE endpoints (full CRUD).
 
+## Step 4
+
+Code cleanup and restructuring (Refactoring). Create ***controllers***
+```
+project
+├── controllers
+│   ├── beer.js
+│   └── user.js
+├── models
+│   ├── beer.js
+│   └── user.js
+├── package.json
+├── README.md
+└── server.js
+```
+
+## Step 5
+
+User Controller for authorized of users
+
+## Step 6
+
+Auth Controller for authentication of users
