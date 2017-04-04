@@ -23,14 +23,20 @@ $ sudo service mongod start
 $ mongo
 ```
 ### Some commands of MongoDB
-```
-**version()** - show version MongoDB
-**show dbs** - show all databases
-**use <name>** - use database by name (use my_base)
-**show collections**
-**db.<коллекция>.find()** - show contain collection (db.people.find())
-**help** - information about the commands
-```
+
+* version() - show version MongoDB
+
+* show dbs - show all databases
+
+* use <name> - use database by name (use my_base)
+
+* show collections
+
+* db.<collection name>.find() - show contain collection (
+db.people.find())
+
+* help - information about the commands
+
 ## Step 3
 I have implemented GET, PUT, POST, and DELETE endpoints.
 
