@@ -63,3 +63,11 @@ User Controller for authorized of users
 ## Step 6
 
 Auth Controller for authentication of users
+
+## Step 7
+
+The client conception added for security of application.
+
+### Step 8
+
+Create another model that will store our authorization codes. These are the codes generated in the first part of the OAuth2 flow. These codes are then used in later steps by getting exchanged for access tokens.
