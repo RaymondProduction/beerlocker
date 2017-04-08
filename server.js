@@ -7,12 +7,16 @@ var authController = require('./controllers/auth');
 var beerController = require('./controllers/beer');
 var userController = require('./controllers/user');
 var clientController = require('./controllers/client');
+var ejs = require('ejs');
 
 // Connect to the beerlocker MongoDB
 mongoose.connect('mongodb://localhost:27017/beerlocker');
 
 // Create our Express application
 var app = express();
+
+// Set view engine to ejs
+app.set('view engine', 'ejs');
 
 // Use the body-parser package in our application
 app.use(bodyParser.urlencoded({
