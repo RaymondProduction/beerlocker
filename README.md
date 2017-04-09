@@ -58,11 +58,11 @@ project
 
 ## Step 5
 
-User Controller for authorized of users
+User Controller for authorized of users. User Controller included POST / GET request and user model of MongoDB.
 
 ## Step 6
 
-Auth Controller for authentication of users
+Auth Controller for authentication of users. It is middleware between user model and everything request for access only user
 
 ## Step 7
 
@@ -75,3 +75,7 @@ Create another model that will store our authorization codes. These are the code
 ## Step 9
 
 Create the model that will store our access tokens. Access tokens are the final step in the OAuth2 process.
+
+## Step 10
+
+A simple user interface created using ejs.
