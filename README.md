@@ -35,6 +35,10 @@ $ mongo
 * db.<collection name>.find() - show contain collection (
 db.people.find())
 
+* db.<collection name>.drop() - remove collection (db.users.drop())
+
+* db.<collection name>.remove({}) - remove contain of collection db.users.remove({})
+
 * help - information about the commands
 
 ## Step 3
