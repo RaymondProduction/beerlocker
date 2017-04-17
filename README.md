@@ -83,3 +83,5 @@ Create the model that will store our access tokens. Access tokens are the final 
 ## Step 10
 
 A simple user interface created using ejs.
+
+[Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
